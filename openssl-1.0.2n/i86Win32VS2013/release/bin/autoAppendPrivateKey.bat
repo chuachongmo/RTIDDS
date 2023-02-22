@@ -1,0 +1,1 @@
+type ".\myCA\newcerts\%1cert.pem" ".\myCA\private\%1key.pem" > %1.pem
