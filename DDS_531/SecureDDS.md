@@ -71,7 +71,7 @@ If not Go to your NDDSHOME directory to copy the files.
 ### STEP 5:
 Run your application. It should run as normal but with DTLS.  
 
-# Procedure to Generate Self Signed Certification.
+# Procedure to Generate Self Signed Certificates using openSSL
 
 ### STEP 1:
 Download [openssl-1.0.2n](https://github.com/chuachongmo/RTIDDS/tree/main/openssl-1.0.2n)
