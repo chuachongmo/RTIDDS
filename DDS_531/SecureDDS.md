@@ -35,7 +35,7 @@ In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property>
   </element>
   <element>
     <name>dds.transport.DTLS.dtls1.tls.identity.certificate_chain_file</name>
-    <value>peer2.pem</value>
+    <value>peer1.pem</value>
     <!-- Use different files for different Domain Participants. -->
   </element>
   <element>
@@ -59,7 +59,7 @@ In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property>
 
 
 ### STEP 3:
-Ensure you have the cacert.pem and peer2.pem file in the same directory as your exe file.
+Ensure you have the cacert.pem and peer1.pem file in the same directory as your exe file.
 
 If not Go to Procedure to [Generate Self Signed Certification](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certification)
 
