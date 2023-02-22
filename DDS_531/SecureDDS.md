@@ -74,10 +74,30 @@ Run your application. It should run as normal but with DTLS.
 # Procedure to Generate Self Signed Certification.
 
 ### STEP 1:
-Download [openssl-1.0.2n](../RTIDDS)
+Download [openssl-1.0.2n](https://github.com/chuachongmo/RTIDDS/tree/main/openssl-1.0.2n)
 
 Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n
 
 ### STEP 2:
+
+Generate CACert by Running AutoGenCACert.bat
+
+You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singapore/O=CCM/OU=CCM/CN=Not Applicable" in the AutoGenCACert.bat
+
+*subj need to be exactly the same
+
+You should get cacert.pem
+
+### STEP 3:
+
+Generate PeerCert by Running AutoGenPeerCert.bat
+
+You can customize the script by changing the string "peer1" in the AutoGenPeerCert.bat
+
+You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singapore/O=CCM/OU=CCM/CN=Not Applicable" in the autoCertReqPrivateKey.bat
+
+*subj need to be exactly the same.
+
+You should get peer1.pem
 
 
