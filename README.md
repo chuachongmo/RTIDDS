@@ -2,7 +2,7 @@
 A location to store all RTI DDS related scripts , templates and codes
 
 
-## Download Method 1 
+## [Download Method 1](https://github.com/chuachongmo/RTIDDS/archive/refs/heads/main.zip) 
 
 ## Download Method 2
 
