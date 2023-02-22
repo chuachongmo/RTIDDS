@@ -74,7 +74,7 @@ Run your application. It should run as normal but with DTLS.
 # Procedure to Generate Self Signed Certification.
 
 ### STEP 1:
-Download and install openssl-1.0.2n
+Download [openssl-1.0.2n](../RTIDDS)
 
 Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n
 
