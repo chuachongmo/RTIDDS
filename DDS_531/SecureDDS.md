@@ -61,7 +61,7 @@ In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property>
 ### STEP 3:
 Ensure you have the cacert.pem and peer2.pem file in the same directory as your exe file.
 
-If not Go to Procedure to Generate Self Signed Certification.
+If not Go to Procedure to [Generate Self Signed Certification](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certification)
 
 ### STEP 4:
 Ensure you have the nddstransporttlsd.dll and nddstransporttls.dll in the same directory as your exe file.
