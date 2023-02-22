@@ -2,9 +2,7 @@
 A location to store all RTI DDS related scripts , templates and codes
 
 
-## [Download Method 1](https://github.com/chuachongmo/RTIDDS/archive/refs/heads/main.zip) 
-
-## Download Method 2
+[Download Source Code here !!!](https://github.com/chuachongmo/RTIDDS/archive/refs/heads/main.zip) 
 
 [Procedure to create a RTI DDS Application with DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md)
 
