@@ -114,6 +114,6 @@ You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singap
 
 *subj need to be exactly the same.
 
-You should get peer1.pem
+You should get peer1.pem and peer2.pem
 
 
