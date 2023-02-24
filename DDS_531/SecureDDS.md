@@ -80,7 +80,7 @@ Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n or any folder.
 
 ### STEP 2:
 
-Generate CACert by Running AutoGenCACert.bat
+Generate CACert by Running AutoGenCACert.bat (Found in .\openssl-1.0.2n\i86Win32VS2013\release)
 
 You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singapore/O=CCM/OU=CCM/CN=Not Applicable" in the AutoGenCACert.bat
 
@@ -90,7 +90,9 @@ You should get cacert.pem
 
 ### STEP 3:
 
-Generate PeerCert by Running AutoGenPeerCert.bat
+Generate PeerCert by Running AutoGenPeerCert.bat (Found in .\openssl-1.0.2n\i86Win32VS2013\release)
+
+Enter "y" when prompted. 
 
 You can customize the script by changing the string "peer1" in the AutoGenPeerCert.bat
 
