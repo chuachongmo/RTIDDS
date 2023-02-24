@@ -76,7 +76,7 @@ Run your application. It should run as normal but with DTLS.
 ### STEP 1:
 Download [openssl-1.0.2n](https://github.com/chuachongmo/RTIDDS/tree/main/openssl-1.0.2n)
 
-Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n
+Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n or any folder. 
 
 ### STEP 2:
 
@@ -93,6 +93,20 @@ You should get cacert.pem
 Generate PeerCert by Running AutoGenPeerCert.bat
 
 You can customize the script by changing the string "peer1" in the AutoGenPeerCert.bat
+
+```
+set PEER=peer1
+```
+
+To generate more peer certificate, duplicate the code and change the peer1 to peer2 in AutoGenPeerCert.bat
+
+```
+set PEER=peer1
+call "autoCertReqPrivateKey.bat" %PEER%
+call "autoSignCert.bat" %PEER%
+call "autoAppendPrivateKey.bat" %PEER%
+copy ".\%PEER%.pem" "..\%PEER%.pem" /y
+```
 
 You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singapore/O=CCM/OU=CCM/CN=Not Applicable" in the autoCertReqPrivateKey.bat
 
