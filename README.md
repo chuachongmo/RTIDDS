@@ -1,6 +1,5 @@
 # RTIDDS
-A location to store all RTI DDS related scripts , templates and codes
-
+A location to store all RTI DDS related knowledge, scripts, templates and codes. 
 
 [Download Source Code here !!!](https://github.com/chuachongmo/RTIDDS/archive/refs/heads/main.zip) 
 
