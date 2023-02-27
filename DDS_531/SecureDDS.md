@@ -116,4 +116,32 @@ You can customize the script by changing the -subj "/C=SG/ST=Singpapore/L=Singap
 
 You should get peer1.pem and peer2.pem
 
+Open the peer1.pem file should contains 2 parts
+1. an identifying certificate which has been signed by the authority
+2. the private key associated with the public key contained in the certificat
+
+# RTI DDS DTLS
+
+Data security is provided by wrapping all Connext DDS network traffic with the Datagram Transport
+Layer Security (DTLS) protocol (IETF RFC 4347). It uses TLS v1.1 specification (IETF RFC 4346). The RFC standards are implemented in [OpenSSL v1.0.2n](https://github.com/openssl/openssl/tree/OpenSSL_1_0_2n).
+
+
+### DTLS Architecture
+
+![image](https://user-images.githubusercontent.com/25761033/221497352-dc1129fb-1e62-47f6-a9f7-312d28008ba8.png)
+
+
+
+In order to communicate securely, an instance of the secure plugin requires: 
+1) a certificate authority (shared with all peers) --> e.g cacert.pem see [Generate Self Signed Certification](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certification)
+2) an identifying certificate which has been signed by the authority --> e.g peer1.pem see [Generate Self Signed Certification](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certification)
+3) the private key associated with the public key contained in the certificate --> e.g. peer1.pem see [Generate Self Signed Certification](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certification)
+
+
+
+
+
+
+
+
 
