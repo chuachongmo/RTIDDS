@@ -126,6 +126,10 @@ Data security is provided by wrapping all Connext DDS network traffic with the D
 Layer Security (DTLS) protocol ([IETF RFC 4347](https://www.rfc-editor.org/rfc/rfc4347)). It uses TLS v1.1 specification ([IETF RFC 4346](https://datatracker.ietf.org/doc/html/rfc4346)). The RFC standards are implemented in [OpenSSL v1.0.2n](https://github.com/openssl/openssl/tree/OpenSSL_1_0_2n).
 
 
+### DTLS HandShake
+![image](https://user-images.githubusercontent.com/25761033/221502600-8996016b-e9df-4e8c-b6e2-bf78f4b02fd6.png)
+
+
 ### DTLS Architecture
 
 ![image](https://user-images.githubusercontent.com/25761033/221497352-dc1129fb-1e62-47f6-a9f7-312d28008ba8.png)
