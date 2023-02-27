@@ -123,7 +123,7 @@ Open the peer1.pem file should contains 2 parts
 # RTI DDS DTLS
 
 Data security is provided by wrapping all Connext DDS network traffic with the Datagram Transport
-Layer Security (DTLS) protocol ([IETF RFC 4347](https://www.rfc-editor.org/rfc/rfc4347)). It uses TLS v1.1 specification (IETF RFC 4346). The RFC standards are implemented in [OpenSSL v1.0.2n](https://github.com/openssl/openssl/tree/OpenSSL_1_0_2n).
+Layer Security (DTLS) protocol ([IETF RFC 4347](https://www.rfc-editor.org/rfc/rfc4347)). It uses TLS v1.1 specification ([IETF RFC 4346](https://datatracker.ietf.org/doc/html/rfc4346)). The RFC standards are implemented in [OpenSSL v1.0.2n](https://github.com/openssl/openssl/tree/OpenSSL_1_0_2n).
 
 
 ### DTLS Architecture
