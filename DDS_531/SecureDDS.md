@@ -70,6 +70,7 @@ If not Go to your NDDSHOME directory to copy the files.
 
 ### STEP 5:
 Ensure openssl.exe is in the environment PATH. Control Panel --> System --> Edit the system environment variables
+If you do not have openssl.exe download here [openssl-1.0.2n](https://github.com/chuachongmo/RTIDDS/tree/main/openssl-1.0.2n).
 
 ### STEP 6:
 Run your application. It should run as normal but with DTLS.  
