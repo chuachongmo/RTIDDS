@@ -69,6 +69,9 @@ Ensure you have the nddstransporttlsd.dll and nddstransporttls.dll in the same d
 If not Go to your NDDSHOME directory to copy the files.
 
 ### STEP 5:
+Ensure openssl.exe is in the environment PATH. Control Panel --> System --> Edit the system environment variables
+
+### STEP 6:
 Run your application. It should run as normal but with DTLS.  
 
 # Procedure to Generate Self Signed Certificates using openSSL
