@@ -9,4 +9,4 @@ A location to store all RTI DDS related knowledge, scripts, templates and codes.
 
 [Explanation on RTI DDS DTLS implementation](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#rti-dds-dtls)
 
-[Comparison of DDS Secure vs DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_631/SecureDDS.md)
+[Comparison of DDS Secure vs DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_6_3_1/SecureDDS.md)
