@@ -1,11 +1,22 @@
 # Overview of DDS Secure
 
 Handles the following Cyber Threats
-1. Unauthorized Subscription
-2. Unauthorized Publication
-3. Tampering And Replay
-4. Crossing Domains
 
+## 1. Unauthorized Subscription
+
+Unauthorized subscription (aka, Eavesdropping) implies being able to read sensitive data without authorization.
+
+## 2. Unauthorized Publication
+
+Unauthorized publication means publishing data onto the DDS Databus without authorization.
+
+## 3. Tampering And Replay
+
+Tampering involves intercepting and modifying data before sending it to the legitimate subscriber.
+
+## 4. Crossing Domains
+
+All the threats described above could cross DDS domains if an infrastructure service, such as RTI Routing Service, joins a domain being attacked by malicious DomainParticipants.
 
 # DTLS vs DDS Secure
 
