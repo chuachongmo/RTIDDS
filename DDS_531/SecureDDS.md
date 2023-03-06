@@ -5,11 +5,11 @@ This procedure assumes a working DDS Application with a valid USER_QOS_PROFILES.
 ### STEP 1:
 Go to USER_QOS_PROFILES.xml file used by the DDS application.
 
+Remove any existing <transport_builtin> , <initial_peers> 
+
 
 ### STEP 2:
 In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property> , Add the following Code
-
-  
 
 ```
 <value>
@@ -56,6 +56,20 @@ In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property>
   </element>
 </value>
 ```
+
+In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> <transport_builtin> , Add the following Code
+```
+          <mask>MASK_NONE</mask>
+```
+
+In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> <initial_peers> , Add the following Code
+```
+         <element>dtls://127.0.0.1</element>
+```
+
+This can be any IP address that other DTLS DDS Participants maybe listening on. In this example Loopback address is used.
+
+
 
 
 ### STEP 3:
