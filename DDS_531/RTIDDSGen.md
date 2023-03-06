@@ -53,6 +53,33 @@ Copy USER_QOS_PROFILES.xml into the ..\objs\i86Win32VS2013\
 
 [Modify USER_QOS_PROFILES.xml using this procedure](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-create-a-rti-dds-application-with-dtls)
 
+# Procedure to Verify DTLS is enabled for the DDS Applications
+
+## STEP 1
+
+Download and install [Latest Wireshark](https://www.wireshark.org/)
+
+## STEP 2
+
+Make sure HelloWorld_publisher and HelloWorld_subscriber is running
+
+Select the correct network interface. In this guide use loopback as the network interface.
+
+Inspect the captured packets you should see DTLS packets only
+
+## STEP 3
+
+Open RTI Administration Console
+
+Add Peers 20@builtin.udpv4://localhost
+
+Join Domain 0
+
+Should not see any participant on Domain 0
+
+
+
+
 
 
 
