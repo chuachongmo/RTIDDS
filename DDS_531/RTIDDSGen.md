@@ -25,10 +25,10 @@ Recommend to put the openssl-1.0.2n in C:\openssl-1.0.2n
 
 
 ## STEP 3
-Download [HelloWorld.idl](https://github.com/chuachongmo/RTIDDS/blob/main/DTLS%20Example/HelloWorld.idl)
+Download [HelloWorld.idl](https://github.com/chuachongmo/RTIDDS/releases/download/PubSub/HelloWorld.idl)
 
 Download [rtiddsgen531_vs2013.bat
-](https://github.com/chuachongmo/RTIDDS/blob/main/DTLS%20Example/rtiddsgen531_vs2013.bat)
+](https://github.com/chuachongmo/RTIDDS/releases/download/PubSub/rtiddsgen531_vs2013.bat)
 
 Copy in any folder
 
