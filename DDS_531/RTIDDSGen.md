@@ -15,7 +15,7 @@ Check it is version 2.5.2
 
 Make sure openssl is installed
 
-if NOT
+if NOT Download [openSSL 1.0.2n](https://github.com/chuachongmo/RTIDDS/tree/main/openssl-1.0.2n)
 
 
 Download HelloWorld.idl
