@@ -1,3 +1,4 @@
+
 set "current_dir=%cd%"
 
 IF NOT EXIST HelloWorld (
