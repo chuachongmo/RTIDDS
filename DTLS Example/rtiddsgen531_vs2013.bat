@@ -1,4 +1,4 @@
-
+set PATH="C:\Program Files\rti_connext_dds-5.3.1\bin"
 set "current_dir=%cd%"
 
 IF NOT EXIST HelloWorld (
