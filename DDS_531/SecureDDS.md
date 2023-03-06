@@ -68,11 +68,11 @@ In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> , Add the follo
 
 In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> , Add the following Code
 ```
-	      <discovery>
-				  <initial_peers>
-            <element>dtls://127.0.0.1</element>
-         	</initial_peers>
-				</discovery>
+	<discovery>
+		<initial_peers>
+			<element>dtls://127.0.0.1</element>
+        	</initial_peers>
+	</discovery>
 ```
 
 This can be any IP address that other DTLS DDS Participants maybe listening on. In this example Loopback address is used.
