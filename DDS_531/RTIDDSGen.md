@@ -40,6 +40,14 @@ Make sure VS2013 is installed.
 
 Open "HelloWorld-i86Win32VS2013.sln" with VS2013
 
+Go to the HelloWorld_publisher.cxx file 
+
+under comment --> // Modify the data to be written here, add
+
+```
+sample.msg("CCM Secure");
+```
+
 Compile the whole solution
 
 You should get 2 files in ..\objs\i86Win32VS2013\
@@ -53,6 +61,16 @@ Copy USER_QOS_PROFILES.xml into the ..\objs\i86Win32VS2013\
 ## STEP 5
 
 [Modify USER_QOS_PROFILES.xml using this procedure](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-create-a-rti-dds-application-with-dtls)
+
+## STEP 6
+
+Run 
+
+1.HelloWorld_publisher.exe
+
+2.HelloWorld_subscriber.exe
+
+If all steps are correct you should see the subscriber print "CCM Secure"
 
 # Procedure to Verify DTLS is enabled for the DDS Applications
 
