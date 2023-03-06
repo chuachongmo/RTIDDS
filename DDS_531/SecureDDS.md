@@ -9,62 +9,70 @@ Remove any existing <transport_builtin> , <initial_peers>
 
 
 ### STEP 2:
-In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> < property> , Add the following Code
+In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos>, Add the following Code
 
 ```
-<value>
-  <element>
-    <name>dds.transport.load_plugins</name>
-    <value>dds.transport.DTLS.dtls1</value>
-  </element>
-  <element>
-    <!-- Setting this property has no effect if linking statically and setting create_function_ptr. -->
-    <name>dds.transport.DTLS.dtls1.library</name>
-    <value>nddstransporttls</value>
-    <!-- Must be this value if linking dynamically. -->
-  </element>
-  <element>
-    <!-- Only needed if linking dynamically. -->
-    <name>dds.transport.DTLS.dtls1.create_function</name>
-    <value>NDDS_Transport_DTLS_create</value>
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.tls.verify.ca_file</name>
-    <value>cacert.pem</value>
-    <!-- Use the same file for different Domain Participants. -->
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.tls.identity.certificate_chain_file</name>
-    <value>peer1.pem</value>
-    <!-- Use different files for different Domain Participants. -->
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.dtls_handshake_resend_interval</name>
-    <value>1000</value>
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.verbosity</name>
-    <value>0</value>
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.security_verbosity</name>
-    <value>0</value>
-  </element>
-  <element>
-    <name>dds.transport.DTLS.dtls1.dtls_connection_liveliness_interval</name>
-    <value>60</value>
-  </element>
-</value>
+<property>
+  <value>
+    <element>
+      <name>dds.transport.load_plugins</name>
+      <value>dds.transport.DTLS.dtls1</value>
+    </element>
+    <element>
+      <!-- Setting this property has no effect if linking statically and setting create_function_ptr. -->
+      <name>dds.transport.DTLS.dtls1.library</name>
+      <value>nddstransporttls</value>
+      <!-- Must be this value if linking dynamically. -->
+    </element>
+    <element>
+      <!-- Only needed if linking dynamically. -->
+      <name>dds.transport.DTLS.dtls1.create_function</name>
+      <value>NDDS_Transport_DTLS_create</value>
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.tls.verify.ca_file</name>
+      <value>cacert.pem</value>
+      <!-- Use the same file for different Domain Participants. -->
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.tls.identity.certificate_chain_file</name>
+      <value>peer1.pem</value>
+      <!-- Use different files for different Domain Participants. -->
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.dtls_handshake_resend_interval</name>
+      <value>1000</value>
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.verbosity</name>
+      <value>0</value>
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.security_verbosity</name>
+      <value>0</value>
+    </element>
+    <element>
+      <name>dds.transport.DTLS.dtls1.dtls_connection_liveliness_interval</name>
+      <value>60</value>
+    </element>
+  </value>
+</property>
 ```
 
-In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> <transport_builtin> , Add the following Code
+In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> , Add the following Code
 ```
+        <transport_builtin> 
           <mask>MASK_NONE</mask>
+        </transport_builtin>           
 ```
 
-In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> --> <initial_peers> , Add the following Code
+In USER_QOS_PROFILES.xml --> <qos_profile> --> <participant_qos> , Add the following Code
 ```
-         <element>dtls://127.0.0.1</element>
+	      <discovery>
+				  <initial_peers>
+            <element>dtls://127.0.0.1</element>
+         	</initial_peers>
+				</discovery>
 ```
 
 This can be any IP address that other DTLS DDS Participants maybe listening on. In this example Loopback address is used.
