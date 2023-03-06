@@ -49,6 +49,9 @@ You should get 2 files in ..\objs\i86Win32VS2013\
 
 Copy USER_QOS_PROFILES.xml into the ..\objs\i86Win32VS2013\
 
+## STEP 5
+
+[Modify USER_QOS_PROFILES.xml using this procedure](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-create-a-rti-dds-application-with-dtls)
 
 
 
