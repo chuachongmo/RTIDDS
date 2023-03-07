@@ -1,1 +1,3 @@
-[Ports](https://community.rti.com/static/documentation/connext-dds/5.3.1/doc/manuals/connext_dds/html_files/RTI_ConnextDDS_CoreLibraries_UsersManual/index.htm#UsersManual/Inbound_Ports_for_Meta_Traffic.htm#discovery_507287096_366425%3FTocPath%3DPart%25203%253A%2520Advanced%2520Concepts%7CDiscovery%7CPorts%2520Used%2520for%2520Discovery%7C_____1)
+[Formula For UDP Port Calucation](https://community.rti.com/static/documentation/connext-dds/5.3.1/doc/manuals/connext_dds/html_files/RTI_ConnextDDS_CoreLibraries_UsersManual/index.htm#UsersManual/Inbound_Ports_for_Meta_Traffic.htm#discovery_507287096_366425%3FTocPath%3DPart%25203%253A%2520Advanced%2520Concepts%7CDiscovery%7CPorts%2520Used%2520for%2520Discovery%7C_____1)
+
+
