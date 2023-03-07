@@ -6,7 +6,7 @@ A location to store all RTI DDS related knowledge, scripts, templates and codes.
 
 [Procedure to Generate a Basic Publisher and Subscriber with DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/RTIDDSGen.md#procedure-to-generate-a-basic-publisher-and-subscriber-with-dtls)
 
-[Procedure to create a RTI DDS Application with DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md)
+[Procedure to convert an existing RTI DDS Application to Enable DTLS](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md)
 
 [Procedure to Generate Self Signed Certificates using openSSL](https://github.com/chuachongmo/RTIDDS/blob/main/DDS_531/SecureDDS.md#procedure-to-generate-self-signed-certificates-using-openssl)
 
