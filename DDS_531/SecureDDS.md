@@ -1,4 +1,4 @@
-# Procedure to create a RTI DDS Application with DTLS
+# Procedure to convert an existing RTI DDS Application to Enable DTLS
 
 This procedure assumes a working DDS Application with a valid USER_QOS_PROFILES.xml.
 
