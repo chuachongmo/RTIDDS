@@ -14,3 +14,5 @@ A location to store all RTI DDS related knowledge, scripts, templates and codes.
 
 [Comparison of DDS Secure vs DTLS](DDS_6_1_2/DDSSecure.md)
 
+Procedure to Configure Routing Service to enable DTLS
+
